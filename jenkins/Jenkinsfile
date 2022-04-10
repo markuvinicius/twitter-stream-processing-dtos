@@ -1,0 +1,43 @@
+pipeline {
+
+    tools {
+        maven 'maven'
+        jdk 'jdk8'
+    }
+
+     environment {
+        registry = "markuvinicius/twitter-collector"
+        registryCredential = 'dockerhub'
+     }
+
+    agent any
+
+    stages {
+        stace ('Unit Tests') {
+            steps {
+                echo "Running JUnit tests"
+                sh '''
+                    mvn clean test
+                '''
+            }
+        }
+
+        stage ('Build Artifact') {
+            steps {
+                echo 'Building Artifact'
+                    sh '''
+                        mvn clean package
+                    '''
+            }
+        }
+
+        stage("Push artifact") {
+            steps {
+                echo 'Pushing Artifact to github repository'
+                sh '''
+                    mvn deploy
+                '''
+            }
+        }
+    }
+}
