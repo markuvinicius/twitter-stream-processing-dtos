@@ -6,7 +6,7 @@
 
     <groupId>com.markuvinicius.twitter.stream.dtos</groupId>
     <artifactId>twitter-stream-dtos</artifactId>
-    <version>1.1-SNAPSHOT</version>
+    <version>0.0.1</version>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
