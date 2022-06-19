@@ -1,4 +1,4 @@
-package com.markuvinicius.twitter.stream.serializers;
+package com.markuvinicius.twitter.stream.json;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
