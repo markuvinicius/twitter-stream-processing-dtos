@@ -91,6 +91,9 @@ public class StatusDTO {
     private int retweetedStatusId;
 
     @JsonProperty
+    private int retweetedUserId;
+
+    @JsonProperty
     private int quotedStatusId;
 
     @JsonProperty
@@ -342,5 +345,13 @@ public class StatusDTO {
 
     public void setQuotedUserId(int quotedUserId) {
         this.quotedUserId = quotedUserId;
+    }
+
+    public int getRetweetedUserId() {
+        return retweetedUserId;
+    }
+
+    public void setRetweetedUserId(int retweetedUserId) {
+        this.retweetedUserId = retweetedUserId;
     }
 }
