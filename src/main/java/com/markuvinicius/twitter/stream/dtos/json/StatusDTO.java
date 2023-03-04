@@ -87,6 +87,15 @@ public class StatusDTO {
     @JsonProperty
     private URLEntityDTO[] urlEntities;
 
+    @JsonProperty
+    private int retweetedStatusId;
+
+    @JsonProperty
+    private int quotedStatusId;
+
+    @JsonProperty
+    private int quotedUserId;
+
     public long getCreatedAt() {
         return createdAt;
     }
@@ -301,5 +310,37 @@ public class StatusDTO {
 
     public void setUrlEntities(URLEntityDTO[] urlEntities) {
         this.urlEntities = urlEntities;
+    }
+
+    public UserMentionEntityDTO[] getUserMentionEntities() {
+        return userMentionEntities;
+    }
+
+    public void setUserMentionEntities(UserMentionEntityDTO[] userMentionEntities) {
+        this.userMentionEntities = userMentionEntities;
+    }
+
+    public int getRetweetedStatusId() {
+        return retweetedStatusId;
+    }
+
+    public void setRetweetedStatusId(int retweetedStatusId) {
+        this.retweetedStatusId = retweetedStatusId;
+    }
+
+    public int getQuotedStatusId() {
+        return quotedStatusId;
+    }
+
+    public void setQuotedStatusId(int quotedStatusId) {
+        this.quotedStatusId = quotedStatusId;
+    }
+
+    public int getQuotedUserId() {
+        return quotedUserId;
+    }
+
+    public void setQuotedUserId(int quotedUserId) {
+        this.quotedUserId = quotedUserId;
     }
 }
