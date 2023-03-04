@@ -7,4 +7,12 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 public class StatusDeletionNoticeKeyDTO {
     @JsonProperty
     private String statusId;
+
+    public String getStatusId() {
+        return statusId;
+    }
+
+    public void setStatusId(String statusId) {
+        this.statusId = statusId;
+    }
 }
