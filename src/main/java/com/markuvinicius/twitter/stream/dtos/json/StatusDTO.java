@@ -88,16 +88,16 @@ public class StatusDTO {
     private URLEntityDTO[] urlEntities;
 
     @JsonProperty
-    private int retweetedStatusId;
+    private double retweetedStatusId;
 
     @JsonProperty
-    private int retweetedUserId;
+    private double retweetedUserId;
 
     @JsonProperty
-    private int quotedStatusId;
+    private double quotedStatusId;
 
     @JsonProperty
-    private int quotedUserId;
+    private double quotedUserId;
 
     public long getCreatedAt() {
         return createdAt;
@@ -283,12 +283,12 @@ public class StatusDTO {
         this.hashTagEntities = hashTagEntities;
     }
 
-    public UserMentionEntityDTO[] getUserMentions() {
+    public UserMentionEntityDTO[] getUserMentionEntities() {
         return userMentionEntities;
     }
 
-    public void setUserMentions(UserMentionEntityDTO[] userMentions) {
-        this.userMentionEntities = userMentions;
+    public void setUserMentionEntities(UserMentionEntityDTO[] userMentionEntities) {
+        this.userMentionEntities = userMentionEntities;
     }
 
     public MediaEntityDTO[] getMediaEntities() {
@@ -315,43 +315,35 @@ public class StatusDTO {
         this.urlEntities = urlEntities;
     }
 
-    public UserMentionEntityDTO[] getUserMentionEntities() {
-        return userMentionEntities;
-    }
-
-    public void setUserMentionEntities(UserMentionEntityDTO[] userMentionEntities) {
-        this.userMentionEntities = userMentionEntities;
-    }
-
-    public int getRetweetedStatusId() {
+    public double getRetweetedStatusId() {
         return retweetedStatusId;
     }
 
-    public void setRetweetedStatusId(int retweetedStatusId) {
+    public void setRetweetedStatusId(double retweetedStatusId) {
         this.retweetedStatusId = retweetedStatusId;
     }
 
-    public int getQuotedStatusId() {
-        return quotedStatusId;
-    }
-
-    public void setQuotedStatusId(int quotedStatusId) {
-        this.quotedStatusId = quotedStatusId;
-    }
-
-    public int getQuotedUserId() {
-        return quotedUserId;
-    }
-
-    public void setQuotedUserId(int quotedUserId) {
-        this.quotedUserId = quotedUserId;
-    }
-
-    public int getRetweetedUserId() {
+    public double getRetweetedUserId() {
         return retweetedUserId;
     }
 
-    public void setRetweetedUserId(int retweetedUserId) {
+    public void setRetweetedUserId(double retweetedUserId) {
         this.retweetedUserId = retweetedUserId;
+    }
+
+    public double getQuotedStatusId() {
+        return quotedStatusId;
+    }
+
+    public void setQuotedStatusId(double quotedStatusId) {
+        this.quotedStatusId = quotedStatusId;
+    }
+
+    public double getQuotedUserId() {
+        return quotedUserId;
+    }
+
+    public void setQuotedUserId(double quotedUserId) {
+        this.quotedUserId = quotedUserId;
     }
 }
