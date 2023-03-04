@@ -64,7 +64,7 @@ public class StatusDTO {
     private int currentUserRetweetId;
 
     @JsonProperty
-    private boolean possibleSensitive;
+    private boolean possiblySensitive;
 
     @JsonProperty
     private String lang;
@@ -239,12 +239,12 @@ public class StatusDTO {
         this.currentUserRetweetId = currentUserRetweetId;
     }
 
-    public boolean isPossibleSensitive() {
-        return possibleSensitive;
+    public boolean isPossiblySensitive() {
+        return possiblySensitive;
     }
 
-    public void setPossibleSensitive(boolean possibleSensitive) {
-        this.possibleSensitive = possibleSensitive;
+    public void setPossiblySensitive(boolean possiblySensitive) {
+        this.possiblySensitive = possiblySensitive;
     }
 
     public String getLang() {
