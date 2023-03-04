@@ -272,11 +272,11 @@ public class StatusDTO {
     }
 
     public UserMentionEntityDTO[] getUserMentions() {
-        return userMentions;
+        return userMentionEntities;
     }
 
     public void setUserMentions(UserMentionEntityDTO[] userMentions) {
-        this.userMentions = userMentions;
+        this.userMentionEntities = userMentions;
     }
 
     public MediaEntityDTO[] getMediaEntities() {
