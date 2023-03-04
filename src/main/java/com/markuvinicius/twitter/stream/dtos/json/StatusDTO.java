@@ -76,7 +76,7 @@ public class StatusDTO {
     private HashTagEntityDTO[] hashTagEntities;
 
     @JsonProperty
-    private UserMentionEntityDTO[] userMentions;
+    private UserMentionEntityDTO[] userMentionEntities;
 
     @JsonProperty
     private MediaEntityDTO[] mediaEntities;
