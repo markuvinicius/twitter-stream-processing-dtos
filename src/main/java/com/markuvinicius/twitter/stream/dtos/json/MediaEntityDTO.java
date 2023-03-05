@@ -1,12 +1,13 @@
 package com.markuvinicius.twitter.stream.dtos.json;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.util.List;
 import java.util.Map;
 
-@JsonInclude(JsonInclude.Include.NON_NULL)
+//@JsonInclude(JsonInclude.Include.NON_NULL)
 public class MediaEntityDTO {
 
     @JsonProperty
@@ -18,7 +19,7 @@ public class MediaEntityDTO {
     @JsonProperty
     private String mediaUrl;
 
-    @JsonProperty
+    @JsonIgnore
     private List<MediaEntityMetaDataDTO> sizes;
 
     @JsonProperty
